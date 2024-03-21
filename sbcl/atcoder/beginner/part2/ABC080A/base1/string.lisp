@@ -1,0 +1,5 @@
+(let ((str1 "hello")
+      (str2 "hello"))
+  (if (string= str1 str2 :test #'string=)
+      (format t "Same")
+      (format t "Different")))

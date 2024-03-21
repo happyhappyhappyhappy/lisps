@@ -1,0 +1,15 @@
+(defun main ()
+    (let*
+        (
+            (str (read-line))
+        )
+        (defun pr (x)
+                (princ x))
+        (defun analy (str)
+            (count "1" str :test #'string=)
+        )
+        (pr (analy str))
+    )
+    (fresh-line)
+)
+(main)
